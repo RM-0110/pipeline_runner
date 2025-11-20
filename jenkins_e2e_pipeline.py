@@ -21,19 +21,7 @@ password = 'pushpa'
 sheet_url = "https://docs.google.com/spreadsheets/d/1Dzh9k36cThoPXlg-X9DZudYNL90kLiOQTL6FMAnPCr0/edit?gid=386855678#gid=386855678"
 sheet_tab = "end to end"
 
-auth_json = {
-  "type": "service_account",
-  "project_id": "sheet-read-441605",
-  "private_key_id": "4ad915ddc0fca917d6575292cd6219c927bd269e",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC0mxWe9MEmiEUP\nJYJ4EPqKeB8sEaig0v9oVuN3oDIK5OHzZ1fPSFWBKlSRqm5iDANs9sTamch680x8\n1tmUICf6LSq1FLc35MvgD0G6qWtVREG2cYaSNP60t43+gqWttm4re1h21/bzQ1fn\nwnAo5ol3zNXYpFvTNl55gMhfvhe/2tpCnPhf7LE2EGiWrAn5HIjDPVZFYxfuyZ84\n7ZVnju1azM2QFw2keewc9w5P4Elg8PCBxAG3smuEtKiM1QPfGZf8zCNfpx1GQfT/\nlF5BcLUruZGOJRmPj0W/XYdeZJUf/6I4OCZztyKO09urQbNZsynso6XieQ9BdcL5\ntDy1dIvBAgMBAAECggEAB6Ks2dQ89dbG0KdqnVsRmvJ0IuyGMnJpMOCUUk9LMYTp\n41zIBhZOFlCTVB5rKnYzXBNDHeWb57LK74lny0ITkcyaCx80L2B0mOVPbceFQNmw\n/rhMkt7U5XZpjuW4Gm1/H+B7MqvaH81Swi4V7tMisBY29KdFaI5AyHNAEjT0eeLO\nrub9tcJC4hDWBpc395V5fZiJAtmPU8zJD+Ur/wi0dPFjVzJ/ubLw/8YG8MrUdfrA\nCV29SDmU4/GW4oeQF641wsS17A0DXAitXkMWMnJ4RgWrzZwl6N7731SW0upVKY9t\nJ0eAtiwXs7yHkRISR/iBCbH1UnOM2BuWumgZA5KaaQKBgQDZiB0gQcfgjVyxaiTm\nMRIp27gJEifmbJsXnyLeG/Z0YtJB4iju84bRoLXXrfj++Yjw94PImUOCXgaw5kYK\nlxW96B47JDwZaVPY+41qJf5RPd40zCVKnD9amMu782MZYxMmc4qfZBLM4K/JGhdn\nR7/HYcYck99h6dmWb+smi+aBJQKBgQDUi0wEuxuZcOS2roiMTuDn8FLYAdR/fBd7\nBK5VOeuVQ9TI/o9bZ4kIn7tuyeBf4o8gTUzBuDXWMHA54xwrn6ImLf0zqHW5BxF6\na/eJWbS4F8XGw8vVi7NXXORv8jPqMoaUTHm2i6CAraqxPzdZDDuZs9yQimtvAcWL\nmrNhiDGjbQKBgQDYBX23HNwbOQbGALyoBC8fdlzqVSdegpf5+0SrAWXb6o8Wcjto\nIFrQLiKnDtNokfHWKlaqjNkny6wlXGhN9//VWX88CB3OtnRX1Gd49EX7886I6/pU\nf5nCpF4eRfMxsNvBoZgV9VFeN/sZYFnBbNUccRJGKur41zwHUxlYbDH6KQKBgE7r\nAejnyJGqt2GVYKIoT54PP9NwqoRDgTxuOoTuoqijrQiMbJJV2S3YkXHLh4JSzy4B\nRbTQPz0ucx0rVLRl64Edplxd+ogfNcAtApZ/Nnj8arUo0jCSVJ7loPRoDBqzdADw\nfGjpY0kkMrLpdBWeUyr4+7a3jriDAeSaJmzacwPpAoGBAL8Vjm7N5GTz895WbJVu\nOo5QyBW13pMA/CSP07tga6SZnGpbSB3v4WQKfj8GFJhdJ+85P9GAOnRPzBbL/60y\ncyQCVHeu+47eDJ15i4SzxBUxd9jgn0V2F7oZRUO1dW4tbhQ1fVQpcBERayIT6y31\nV/yTpz2sjWIWk/LVTZmt+D+y\n-----END PRIVATE KEY-----\n",
-  "client_email": "sheet-read@sheet-read-441605.iam.gserviceaccount.com",
-  "client_id": "109735345456222654134",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sheet-read%40sheet-read-441605.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
-}
+auth_json = auth_json #fetch from secrets
 
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/spreadsheets",
          "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/drive"]
