@@ -19,7 +19,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests pandas gspread
+          pip install requests pandas gspread oauth2client
 
       - name: Run jenkins_e2e_pipeline.py script
         run: |
