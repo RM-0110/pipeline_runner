@@ -15,13 +15,14 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import pandas as pd
 import random
+import os
 
 username = 'pushpa'
 password = 'pushpa'
 sheet_url = "https://docs.google.com/spreadsheets/d/1Dzh9k36cThoPXlg-X9DZudYNL90kLiOQTL6FMAnPCr0/edit?gid=386855678#gid=386855678"
 sheet_tab = "end to end"
 
-auth_json = auth_json #fetch from secrets
+auth_json = os.getenv('AUTH_JSON')
 
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/spreadsheets",
          "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/drive"]
