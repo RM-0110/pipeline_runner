@@ -1,4 +1,4 @@
-name: Send Email
+name: Trigger pipeline
 
 on:
   workflow_dispatch:  # Allow manual triggering
