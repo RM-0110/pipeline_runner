@@ -24,3 +24,5 @@ jobs:
       - name: Run jenkins_e2e_pipeline.py script
         run: |
           python jenkins_e2e_pipeline.py
+        env:
+          AUTH_JSON: ${{ secrets.AUTH_JSON }}
